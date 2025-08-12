@@ -15,7 +15,7 @@ export default function CounterBox({ target, label }: CounterBoxProps) {
     const updateCount = () => {
       if (start < target) {
         start += Math.ceil(speed);
-        setCount(prev => (start >= target ? target : start));
+        setCount(start >= target ? target : start);
         setTimeout(updateCount, 20);
       }
     };

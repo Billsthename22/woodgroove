@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function MeetTheTeam() {
   const team = [
     {
@@ -31,10 +33,13 @@ export default function MeetTheTeam() {
             key={i}
             className="bg-white p-6 rounded-xl shadow-md border border-[#ddd] hover:shadow-lg transition"
           >
-            <img
+            <Image
               src={member.image}
               alt={member.name}
-              className="w-32 h-32 mx-auto rounded-full mb-4 object-cover border-4 border-[#d4af37]"
+              width={128}    // match your previous w-32 (128px)
+              height={128}   // match your previous h-32 (128px)
+              className="mx-auto rounded-full mb-4 object-cover border-4 border-[#d4af37]"
+              priority={false}
             />
             <h3 className="text-xl font-semibold text-[#1c1c1e]">{member.name}</h3>
             <p className="text-sm text-[#a0802a] font-medium">{member.role}</p>

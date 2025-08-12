@@ -11,11 +11,13 @@ export default function ContactPage() {
 
       {/* Hero Banner */}
       <FadeInSection>
-        <section className="relative h-[50vh] flex items-center justify-center bg-[url('/images/contact-hero.jpg')] bg-cover bg-center">
+        <section
+          className="relative h-[50vh] flex items-center justify-center bg-[url('/images/contact-hero.jpg')] bg-cover bg-center"
+        >
           <div className="absolute inset-0 bg-[#0e1a2b]/80 z-0" />
           <div className="relative z-10 text-center text-[#f9f6f1] px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-2">Contact Us</h1>
-            <p className="text-lg md:text-xl">Let’s help you find your dream home</p>
+            <p className="text-lg md:text-xl">Let&apos;s help you find your dream home</p>
           </div>
         </section>
       </FadeInSection>
@@ -27,9 +29,10 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="text-[#2c2c2c]">
               <h2 className="text-3xl font-bold text-[#0e1a2b] mb-6">Get In Touch</h2>
-              <p className="mb-4">
-                Whether you're looking to buy, invest, or just have a few questions — we're always happy to help.
+              <p>
+                Whether you&apos;re looking to buy, invest, or just have a few questions — we&apos;re always happy to help.
               </p>
+
               <div className="space-y-4">
                 <p>
                   📍 <span className="font-medium">Office:</span> 12 Sandstone Boulevard, Lekki, Lagos

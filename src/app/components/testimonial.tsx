@@ -28,7 +28,7 @@ export default function Testimonials() {
               key={i}
               className="bg-white border border-[#e0e0e0] rounded-xl shadow-sm p-6 w-80 shrink-0"
             >
-              <p className="text-[#444] italic">"{t.quote}"</p>
+              <p className="text-[#444] italic">&ldquo;{t.quote}&rdquo;</p>
               <div className="mt-4 font-semibold text-[#a2832f]">— {t.name}</div>
             </div>
           ))}

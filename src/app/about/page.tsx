@@ -5,6 +5,7 @@ import Footer from '../components/footer';
 import MeetTheTeam from '../components/MeetTheTeam';
 import CounterBox from '../components/CounterBox';
 import FadeInSection from '../components/FaseInSection';
+import Link from 'next/link';
 
 export default function AboutPage() {
   return (
@@ -18,7 +19,7 @@ export default function AboutPage() {
           <div className="z-10 max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About Woodgroove Realtors</h1>
             <p className="text-lg md:text-xl">
-              Your trusted partner for ready-made homes in Nigeria's most vibrant neighborhoods.
+              Your trusted partner for ready-made homes in Nigeria&apos;s most vibrant neighborhoods.
             </p>
           </div>
         </section>
@@ -31,7 +32,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-[#1B1F3B] mb-6">Our Story</h2>
             <p className="text-[#2C2C2C] text-lg">
               Woodgroove Realtors was established to make home ownership accessible, stress-free, and transparent.
-              Since our founding, we’ve helped hundreds of families and investors own secure, ready-to-move-in properties across Lagos and beyond.
+              Since our founding, we&apos;ve helped hundreds of families and investors own secure, ready-to-move-in properties across Lagos and beyond.
               We combine deep market knowledge with a passion for excellence, ensuring every client feels confident and cared for.
             </p>
           </div>
@@ -84,14 +85,14 @@ export default function AboutPage() {
         <section className="py-20 bg-[#F5EFE6] text-center px-4">
           <h2 className="text-3xl font-bold text-[#1B1F3B] mb-6">Ready to Own Your Dream Home?</h2>
           <p className="text-[#2C2C2C] mb-8 max-w-xl mx-auto">
-            Contact Woodgroove Realtors today and take the first step toward owning a home you’ll love for years to come.
+            Contact Woodgroove Realtors today and take the first step toward owning a home you&apos;ll love for years to come.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="inline-block bg-[#B87333] hover:bg-[#a1602a] text-white px-6 py-3 rounded font-medium transition"
           >
             Get in Touch
-          </a>
+          </Link>
         </section>
       </FadeInSection>
 
